@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
-# Configure Ubuntu server so that localhost resolves to 127.0.0.2
+# Supprime l'ancienne entrée localhost (127.0.0.1)
+sed -i '/127.0.0.1/d' /etc/hosts
 
-cp /etc/hosts /etc/hosts.backup
-sed -i '/localhost/d' /etc/hosts
-sed -i '/facebook.com/d' /etc/hosts
+# Ajoute la nouvelle entrée localhost (127.0.0.2)
 echo "127.0.0.2 localhost" >> /etc/hosts
+
+# Supprime les anciennes entrées facebook.com
+sed -i '/facebook.com/d' /etc/hosts
+
+# Ajoute la nouvelle entrée facebook.com
 echo "8.8.8.8 facebook.com" >> /etc/hosts
