@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Change la configuration de l'IP locale et ajoute une entrée facebook
 
-# On remplace simplement la chaîne "127.0.0.1" par "127.0.0.2" dans le fichier
+# On remplace simplement la chaîne "127.0.0.1" par "127.0.0.2" dans le fihier
 sudo sed -i 's/127.0.0.1/127.0.0.2/' /etc/hosts
 
 # On ajoute la nouvelle ligne pour facebook à la fin du fichier
