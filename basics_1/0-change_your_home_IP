@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configure Ubuntu server so that localhost resolves to 127.0.0.2.
+# Configure Ubuntu server so that localhost resolves to 127.0.0.2
 
 cp /etc/hosts /etc/hosts.backup
 sed -i '/localhost/d' /etc/hosts
