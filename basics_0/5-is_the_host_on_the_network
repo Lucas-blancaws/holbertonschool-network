@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Script bash pour envoyer des sockets sur une adresse ip
 if [ -z "$1"]; then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
